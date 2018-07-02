@@ -18,7 +18,7 @@ pyghcn is a Python 3 library for the NOAA Global Historical Climatology Network 
 
 **Disclaimer: This repository and its author are not affiliated with any of the above institutions.**
 
-## amos3 Roadmap
+## pyghcn Roadmap
 *TBD*
 
 ## Information
