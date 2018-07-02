@@ -1,0 +1,14 @@
+language: python
+python:
+- '3.3'
+- '3.4'
+- '3.5'
+- '3.6'
+sudo: false
+install:
+- pip install -e .
+- pip install python-requirements-dev.txt
+script:
+- PYTHONPATH=. py.test --cov pyghcn --pylint --pylint-rcfile=.pylintrc tests
+after_success:
+- coveralls
