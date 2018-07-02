@@ -2,7 +2,7 @@
 from nose.tools import assert_equal, assert_true
 
 # Project imports
-from client import get_ghcnd_version, get_station_list_data, get_station_daily_data
+from pyghcn.client import get_ghcnd_version, get_station_list_data, get_station_daily_data
 
 
 def test_get_ghcnd_version_ftp():
