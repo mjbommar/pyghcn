@@ -7,7 +7,7 @@ python:
 sudo: false
 install:
 - pip install -e .
-- pip install python-requirements-dev.txt
+- pip install -r python-requirements-dev.txt
 script:
 - PYTHONPATH=. py.test --cov pyghcn --pylint --pylint-rcfile=.pylintrc tests
 after_success:
