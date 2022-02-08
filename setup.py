@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pyghcn',
-    version='0.1.0',
+    version='0.1.1',
     packages=find_packages(exclude=['*tests*']),
     package_dir={'': '.'},
     install_requires=[
@@ -21,6 +21,8 @@ setup(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
     ],
     keywords='noaa ghcn weather climate dataset',
 
