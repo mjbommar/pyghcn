@@ -4,6 +4,8 @@
 import datetime
 
 # Packages
+import numpy
+
 import pandas
 import geopy.distance
 
@@ -35,9 +37,12 @@ def extract_series_from_daily_data(element, station_daily_df):
 
                 # append record
                 series_index.append(row_date)
-                series_rows.append(row[column_name])
+                series_rows.append(float(row[column_name]))
 
-    return pandas.Series(series_rows, index=series_index)
+    if len(series_rows) > 0:
+        return pandas.Series(series_rows, index=series_index)
+    else:
+        return pandas.Series(dtype=numpy.float64)
 
 
 def get_nearby_stations(station_df, latitude, longitude, radius, unit="km", state=None):
